@@ -1,20 +1,20 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from 'web/assets/react.svg'
 import 'web/pages/Home.css'
 import axios from 'axios'
 
 const fetch = async (setText: (text: string) => void) => {
-    const resp = await axios.get('api/hello/')
-    setText(resp.data)
+  const resp = await axios.get('api/hello/')
+  setText(resp.data)
 }
 
 const Home = () => {
-    const [text, setText] = useState('Waiting response...')
-    useEffect(() => {
-            fetch(setText)
-        }, []
-    )
-    return <div className="Home">
+  const [text, setText] = useState('Waiting response...')
+  useEffect(() => {
+    fetch(setText)
+  }, []
+  )
+  return <div className="Home">
         <div className="Home-header">
             <img src={logo} className="Home-logo" alt="logo"/>
             <h2>Welcome to Razzle</h2>
