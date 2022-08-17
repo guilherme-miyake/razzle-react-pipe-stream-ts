@@ -1,5 +1,5 @@
 
-import { ServerRoot } from 'App'
+import { ServerRoot } from 'web/App'
 import React from 'react'
 import { renderToString } from 'react-dom/server'
 

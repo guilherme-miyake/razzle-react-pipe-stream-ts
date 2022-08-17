@@ -3,9 +3,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { StaticRouter } from 'react-router-dom/server'
 import { Request } from 'express'
 
-import Index from 'index'
-import Home from 'pages/Home'
-import 'App.css'
+import Index from './index'
+import Home from './pages/Home'
+import './App.css'
 
 export const App = () =>
     <Routes>

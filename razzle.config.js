@@ -1,11 +1,11 @@
-'use strict'
+'use strict';
 
-const path = require('path')
+const path = require("path");
 
 module.exports = {
-  modifyPaths (opts) {
-    const paths = opts.paths
-    paths.appServerIndexJs = path.join(paths.appPath, 'razzle.js')
-    return paths
-  }
-}
+  modifyPaths(opts) {
+    const paths = opts.paths;
+    paths.appServerIndexJs = path.join(paths.appPath, 'razzle.js');
+    return paths;
+  },
+};

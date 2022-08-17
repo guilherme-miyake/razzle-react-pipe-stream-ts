@@ -1,5 +1,5 @@
 import React, { PropsWithChildren } from 'react'
-import logo from 'assets/favicon.ico'
+import logo from 'web/assets/favicon.ico'
 
 const cssLinksFromAssets = (assets, entrypoint) => assets?.[entrypoint]?.css?.map(
   asset => <link key={asset.split('/')[-1]} rel="stylesheet" href={asset}/>

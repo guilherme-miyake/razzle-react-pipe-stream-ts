@@ -1,4 +1,4 @@
-import { ClientRoot } from 'App'
+import { ClientRoot } from 'web/App'
 import React from 'react'
 import { hydrateRoot } from 'react-dom/client'
 
@@ -8,4 +8,4 @@ hydrateRoot(
 )
 
 // @ts-ignore
-module.hot.accept()
+module.hot?.accept()
